@@ -10,5 +10,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-doc-tour-heroes';
+  title = 'Angular Tour of Heroes';
 }
