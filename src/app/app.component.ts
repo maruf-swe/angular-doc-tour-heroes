@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -12,7 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet, HeroesComponent, HeroDetailsComponent,
-            MessagesComponent, DashboardComponent, AppRoutingModule, HttpClientModule
+            MessagesComponent, DashboardComponent, HttpClientModule, AppRoutingModule,
+             RouterModule
      ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
